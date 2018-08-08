@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivosxml.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="883.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="creacionarchivosxml.FXMLDocumentController">
+   <children>
+      <Label layoutX="260.0" layoutY="14.0" text="Agregar Empleado">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="115.0" text="Nombre:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="162.0" text="Direccion:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="210.0" text="Edad:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="255.0" text="Codigo empleado:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="300.0" text="Departamento:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nametxt" layoutX="239.0" layoutY="115.0" prefHeight="28.0" prefWidth="559.0" />
+      <TextField fx:id="directiontxt" layoutX="239.0" layoutY="163.0" prefHeight="28.0" prefWidth="559.0" />
+      <TextField fx:id="agetxt" layoutX="239.0" layoutY="211.0" prefHeight="28.0" prefWidth="559.0" />
+      <TextField fx:id="codetxt" layoutX="239.0" layoutY="257.0" prefHeight="28.0" prefWidth="559.0" />
+      <TextField fx:id="departtxt" layoutX="239.0" layoutY="302.0" prefHeight="28.0" prefWidth="559.0" />
+      <Button layoutX="239.0" layoutY="396.0" mnemonicParsing="false" onAction="#addEmployer" prefHeight="50.0" prefWidth="148.0" text="Agregar" />
+   </children>
 </AnchorPane>
